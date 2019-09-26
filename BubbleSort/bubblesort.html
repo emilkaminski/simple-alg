@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var A = [2,5,3,8,1,2,3,8];
+        function bubbleSort(array){
+            var change = false;
+            i=0;
+            do {
+                change = false;
+                for (var i=0; i < array.length-1; i++) {
+                    if (array[i] > array[i+1]) {
+                        var temp = array[i];
+                        array[i] = array[i+1];
+                        array[i+1] = temp;
+                        change = true;
+                    }
+                }
+            } while (change);
+        }
+        bubbleSort(A);
+        document.write(A);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	qs.py	/^A = [7,5,12,43,2,1,55,65,1,23,12,6,54,2,1,2,3,6,7,3,4]$/;"	v
+A	quicksort.py	/^A = [2,1,1,4,6,11,12,2,3,4,1,1,1,1,1]$/;"	v
+B	quicksort.py	/^B = [1,1,1,1,1]$/;"	v
+L	quicksort.py	/^L = 0$/;"	v
+R	quicksort.py	/^R = len(A)-1$/;"	v
+RB	quicksort.py	/^RB = len(B)-1$/;"	v
+particion	qs.py	/^def particion(array, left, right):$/;"	f
+quick_sort	qs.py	/^def quick_sort(array,l,r):$/;"	f
+quick_sort	quicksort.py	/^def quick_sort(array, left, right):$/;"	f

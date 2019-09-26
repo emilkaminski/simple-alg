@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+    <div>
+        <input type='text' id='task'>
+        <button id='add'>Add</button>
+        <br/>
+    </div>
+    <lo id='list'>
+        <li> aaa </li>
+        <li> bbb </li>
+    </lo>
+    <script type="text/javascript">
+
+        var addButton = document.getElementById('add')
+        var taskField = document.getElementById('task')
+        var loList = document.getElementById('list')
+
+        addButton.addEventListener('click', function() {
+            var newTask = document.createElement('li')
+            var txt = document.createTextNode(taskField.value)
+            var delBtn = document.createElement('button')
+            delBtn.innerHTML = 'done'
+            delBtn.addEventListener('click',removeTask) 
+            newTask.appendChild(txt)
+            newTask.appendChild(delBtn)
+            loList.appendChild(newTask)
+            taskField.value = ''
+            } )
+
+        function removeTask(e){
+            var taskItem = e.target.parentElement
+            loList.removeChild(taskItem)            
+        }
+    </script>
+</body>
+</html>
